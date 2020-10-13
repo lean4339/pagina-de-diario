@@ -1,0 +1,121 @@
+body{
+    font-family: 'Piazzolla', serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    justify-content: space-around;
+}
+.navbar h1{
+    font-size: 30px;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(1,1,1);
+}
+.navbar input{
+    width: 300px;
+}
+.container_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+.logo{
+    opacity: .7;
+    width: 400px;
+}
+
+.contenedor_central{
+    display: grid;
+    grid-template-columns: 25vw 50 vw 25vw;
+    grid-template-rows: repeat(5, 150px);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100vw;
+    padding: 10px;
+    gap: 5px;
+    justify-content: space-between;
+}
+.clima{
+    grid-column: 1/2;
+
+   
+}
+.clima img{
+    animation-name: animacion;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    margin-bottom: 50px;
+    width: 100px;
+
+}
+@keyframes animacion{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.clima p{
+    padding: 10px;
+}
+.noticia_principal{
+    grid-column: 2/3;
+    border-left: 1px solid black;
+    border: 1px solid black;
+    padding: 10px;
+    
+}
+.noticia_principal img{
+    width: 600px;
+    height: 250px;
+    margin: auto;
+  
+}
+.secciones{
+    grid-column: 3/4;
+   
+    
+}
+.secciones ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
+}
+.secciones ul li a{
+    text-decoration: none;
+    color: rgb(1,1,1);
+    font-size: 24px;
+}
+.contenedor_articulos{
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 250px 250px;
+    gap: 5px;
+    padding: 10px;
+    
+}
+.contenedor_articulos img{
+    width: 35vw;
+    height: 200px;
+}
+
+.contenedor_articulos article{
+    text-align: center;
+   
+}
